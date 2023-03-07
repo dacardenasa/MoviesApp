@@ -83,6 +83,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		04A0B66B0CF74AC7A77E2E35 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +124,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				B366087328344F3B0039FA77 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* MoviesApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* MoviesAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				04A0B66B0CF74AC7A77E2E35 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +145,13 @@
 				00E356EE1AD99517003FC87E /* MoviesAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B366087328344F3B0039FA77 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {

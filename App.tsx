@@ -1,11 +1,19 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {StackNavigation} from 'navigation';
+import {GradientProvider} from 'context/index';
+
+const AppState = ({children}: {children: JSX.Element | JSX.Element[]}) => (
+  <GradientProvider>{children}</GradientProvider>
+);
 
 const App = () => {
   return (
-    <View>
-      <Text>Hello World!</Text>
-    </View>
+    <NavigationContainer>
+      <AppState>
+        <StackNavigation />
+      </AppState>
+    </NavigationContainer>
   );
 };
 

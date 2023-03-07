@@ -19,6 +19,8 @@ target 'MoviesApp' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+
+
   target 'MoviesAppTests' do
     inherit! :complete
     # Pods for testing
