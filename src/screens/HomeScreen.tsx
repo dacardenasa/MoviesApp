@@ -7,6 +7,8 @@ import {
   ScrollView,
   SafeAreaView,
   Platform,
+  Text,
+  Button,
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {GradientWrapper, MoviePoster, MoviesCarrousel} from '@components/index';
@@ -20,7 +22,15 @@ import {useEffect} from 'react';
 const {width: windowWidth} = Dimensions.get('window');
 
 export const HomeScreen = () => {
-  const {nowPlaying, popular, topRated, upcoming, isLoading} = useMovies();
+  const {
+    nowPlaying,
+    popular,
+    topRated,
+    upcoming,
+    isLoading,
+    hasAnyError,
+    handleGetMovies,
+  } = useMovies();
   const {top} = useSafeAreaInsets();
   const {handleBgMainColors, previousColors} = useContext(GradientContext);
 
@@ -39,6 +49,15 @@ export const HomeScreen = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [nowPlaying],
   );
+
+  if (hasAnyError) {
+    return (
+      <View style={styles.loader}>
+        <Text>Error on load movies</Text>
+        <Button title={'Load again movies'} onPress={handleGetMovies} />
+      </View>
+    );
+  }
 
   if (isLoading) {
     return (
