@@ -11,6 +11,7 @@ interface IMoviesState {
 }
 
 export const useMovies = () => {
+  const [hasAnyError, setHasAnyError] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(true);
   const [moviesState, setMoviesState] = useState<IMoviesState>({
     nowPlaying: [],
@@ -20,26 +21,38 @@ export const useMovies = () => {
   });
 
   const getMovies = async () => {
+    console.info('asdad');
     const nowPlayingPromise = moviesAPI.getNowPlayingMovie();
     const popularPromise = moviesAPI.getPopularMovies();
     const topRatedPromise = moviesAPI.getTopRatedMovies();
     const upcomingPromise = moviesAPI.getUpcomingMovies();
+    try {
+      const [nowPlayingMovies, popularMovies, topRatedMovies, upcomingMovies] =
+        await Promise.all([
+          nowPlayingPromise,
+          popularPromise,
+          topRatedPromise,
+          upcomingPromise,
+        ]);
+      setMoviesState({
+        nowPlaying: nowPlayingMovies.results,
+        popular: popularMovies.results,
+        topRated: topRatedMovies.results,
+        upcoming: upcomingMovies.results,
+      });
+      setIsLoading(false);
+      if (hasAnyError) {
+        setHasAnyError(false);
+      }
+    } catch (error: any) {
+      setHasAnyError(true);
+      setIsLoading(false);
+    }
+  };
 
-    const [nowPlayingMovies, popularMovies, topRatedMovies, upcomingMovies] =
-      await Promise.all([
-        nowPlayingPromise,
-        popularPromise,
-        topRatedPromise,
-        upcomingPromise,
-      ]);
-
-    setMoviesState({
-      nowPlaying: nowPlayingMovies.results,
-      popular: popularMovies.results,
-      topRated: topRatedMovies.results,
-      upcoming: upcomingMovies.results,
-    });
-    setIsLoading(false);
+  const handleGetMovies = () => {
+    setIsLoading(true);
+    getMovies();
   };
 
   useFocusEffect(
@@ -52,5 +65,7 @@ export const useMovies = () => {
   return {
     ...moviesState,
     isLoading,
+    hasAnyError,
+    handleGetMovies,
   };
 };
