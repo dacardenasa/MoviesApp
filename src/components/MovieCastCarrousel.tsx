@@ -12,7 +12,7 @@ export const MovieCastCarrousel = ({cast}: {cast: Cast[]}) => {
           <MovieCastCard cast={item} />
         </View>
       )}
-      keyExtractor={item => item.id.toString()}
+      keyExtractor={(item, index) => `${item.id.toString()}-${index}`}
       horizontal
       showsHorizontalScrollIndicator={false}
       ItemSeparatorComponent={() => <View style={styles.separator} />}
