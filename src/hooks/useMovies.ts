@@ -20,8 +20,7 @@ export const useMovies = () => {
     upcoming: [],
   });
 
-  const getMovies = async () => {
-    console.info('asdad');
+  const getMovies = useCallback(async () => {
     const nowPlayingPromise = moviesAPI.getNowPlayingMovie();
     const popularPromise = moviesAPI.getPopularMovies();
     const topRatedPromise = moviesAPI.getTopRatedMovies();
@@ -48,7 +47,7 @@ export const useMovies = () => {
       setHasAnyError(true);
       setIsLoading(false);
     }
-  };
+  }, [hasAnyError]);
 
   const handleGetMovies = () => {
     setIsLoading(true);
@@ -59,7 +58,7 @@ export const useMovies = () => {
     useCallback(() => {
       getMovies();
       return () => null;
-    }, []),
+    }, [getMovies]),
   );
 
   return {
