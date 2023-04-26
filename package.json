@@ -8,6 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "prepare": "husky install",
+    "commit":"git-cz",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "run-development-android": "ENVFILE=.env.development npm run android",
     "run-production-android": "ENVFILE=.env.production npm run android --variant=release",
@@ -34,6 +35,8 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.67.3",
@@ -44,6 +47,8 @@
     "@typescript-eslint/parser": "^5.17.0",
     "babel-jest": "^26.6.3",
     "babel-plugin-module-resolver": "^4.1.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
     "husky": "^8.0.3",
     "jest": "^26.6.3",
@@ -65,5 +70,10 @@
       "json",
       "node"
     ]
-  }
+  },
+  "config":{
+    "commitizen":{
+     "path":"cz-conventional-changelog"
+    }
+   }
 }
