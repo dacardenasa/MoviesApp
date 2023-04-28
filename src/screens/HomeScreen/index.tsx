@@ -12,11 +12,11 @@ import {
 } from 'react-native';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {GradientWrapper, MoviePoster, MoviesCarrousel} from '@components/index';
-import {useMovies} from '@hooks/index';
 import {getColorsMediaFile} from '@helpers/index';
 import {GradientContext} from '@context/index';
 import {PLATFORMS} from '@constants/index';
 import Carousel from 'react-native-snap-carousel';
+import {useMovies} from './useMovies';
 
 const {width: windowWidth} = Dimensions.get('window');
 

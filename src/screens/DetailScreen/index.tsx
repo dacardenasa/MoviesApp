@@ -11,9 +11,9 @@ import {
   SafeAreaView,
 } from 'react-native';
 import {IDetailScreenProps} from '@interfaces/index';
-import {useMovieDetails} from '@hooks/index';
 import {MovieDetails} from '@components/index';
 import Icon from 'react-native-vector-icons/Ionicons';
+import {useMovieDetails} from './useMovieDetails';
 
 const screenHeight = Dimensions.get('screen').height;
 
