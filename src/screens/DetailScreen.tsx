@@ -8,19 +8,21 @@ import {
   Text,
   ActivityIndicator,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 import {IDetailScreenProps} from '@interfaces/index';
 import {useMovieDetails} from '@hooks/index';
 import {MovieDetails} from '@components/index';
-import {SafeAreaView} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const screenHeight = Dimensions.get('screen').height;
 
-export const DetailScreen = ({route}: IDetailScreenProps) => {
-  const navigation = useNavigation<IDetailScreenProps['navigation']>();
-  const movie = route.params;
+export const DetailScreen = ({
+  route: {
+    params: {movie},
+  },
+  navigation,
+}: IDetailScreenProps) => {
   const {isLoading, movieDetails, cast} = useMovieDetails({movieId: movie.id});
   return (
     <SafeAreaView>
