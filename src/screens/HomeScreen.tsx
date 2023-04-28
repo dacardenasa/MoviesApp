@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {
   ActivityIndicator,
   View,
@@ -13,11 +13,10 @@ import {
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import {GradientWrapper, MoviePoster, MoviesCarrousel} from '@components/index';
 import {useMovies} from '@hooks/index';
-
+import {getColorsMediaFile} from '@helpers/index';
+import {GradientContext} from '@context/index';
+import {PLATFORMS} from '@constants/index';
 import Carousel from 'react-native-snap-carousel';
-import {getColorsMediaFile} from 'helpers';
-import {GradientContext} from 'context/index';
-import {useEffect} from 'react';
 
 const {width: windowWidth} = Dimensions.get('window');
 
@@ -37,7 +36,10 @@ export const HomeScreen = () => {
   const getPosterColors = async (index: number) => {
     const uri = nowPlaying[index].poster_path;
     const [primaryColor, secondaryColor] = await getColorsMediaFile(uri);
-    handleBgMainColors({primary: primaryColor, secondary: secondaryColor});
+    handleBgMainColors({
+      primary: primaryColor ?? '#FFFFFF',
+      secondary: secondaryColor ?? '#000000',
+    });
   };
 
   useEffect(
@@ -73,7 +75,8 @@ export const HomeScreen = () => {
         <ScrollView>
           <View
             style={{
-              marginTop: Platform.OS === 'android' ? top + 20 : top - 20,
+              marginTop:
+                Platform.OS === PLATFORMS.ANDROID ? top + 20 : top - 20,
             }}>
             {/* Main Carrousel */}
             <View style={styles.carouselContainer}>

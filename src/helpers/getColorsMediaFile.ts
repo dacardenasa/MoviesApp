@@ -1,4 +1,3 @@
-import {PLATFORMS} from 'constants/global';
 import ImageColors from 'react-native-image-colors';
 
 export const getColorsMediaFile = async (uri: string) => {
@@ -6,11 +5,11 @@ export const getColorsMediaFile = async (uri: string) => {
   let primaryColor;
   let secondaryColor;
 
-  if (colors.platform === PLATFORMS.ANDROID) {
+  if (colors.platform === 'android') {
     primaryColor = colors.dominant;
     secondaryColor = colors.average;
   }
-  if (colors.platform === PLATFORMS.IOS) {
+  if (colors.platform === 'ios') {
     primaryColor = colors.primary;
     secondaryColor = colors.secondary;
   }
