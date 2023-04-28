@@ -1,8 +1,10 @@
 import {api} from '@api/index';
 import {MovieDBResponseAPI, IMovieFull, IMovieCredits} from '@interfaces/index';
-import {transformMovieCredits} from 'adapters/movieCredits';
-import {transformMoviesDetails} from 'adapters/movieDetail';
-import {transformMovies} from 'adapters/movies';
+import {
+  transformMovieCredits,
+  transformMoviesDetails,
+  transformMovies,
+} from '@adapters/index';
 
 export const moviesAPI = {
   getNowPlayingMovie: async () => {
