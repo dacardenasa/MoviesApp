@@ -12,8 +12,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "run-development-android": "ENVFILE=.env.development npm run android",
     "run-production-android": "ENVFILE=.env.production npm run android --variant=release",
-    "run-development-ios": "ENVFILE=.env.development npm run ios --simulator='iPhone 13'",
-    "run-production-ios": "ENVFILE=.env.production npm run ios --variant=release --simulator='iPhone 13'"
+    "run-development-ios": "ENVFILE=.env.development npm run ios -- --simulator='iPhone 15 Pro'",
+    "run-production-ios": "ENVFILE=.env.production npm run ios --variant=release --simulator='iPhone 15 Pro'"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.10",
