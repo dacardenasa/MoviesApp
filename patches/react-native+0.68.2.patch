@@ -1,36 +1,32 @@
-diff --git a/node_modules/react-native/index.js b/node_modules/react-native/index.js
-index e594bbe..660bac4 100644
---- a/node_modules/react-native/index.js
-+++ b/node_modules/react-native/index.js
-@@ -446,31 +446,15 @@ module.exports = {
-   },
-   // Deprecated Prop Types
-   get ColorPropType(): $FlowFixMe {
--    console.warn(
--      'ColorPropType will be removed from React Native. Migrate to ' +
--        "ColorPropType exported from 'deprecated-react-native-prop-types'.",
--    );
-     return require('deprecated-react-native-prop-types').ColorPropType;
-   },
-   get EdgeInsetsPropType(): $FlowFixMe {
--    console.warn(
--      'EdgeInsetsPropType will be removed from React Native. Migrate to ' +
--        "EdgeInsetsPropType exported from 'deprecated-react-native-prop-types'.",
--    );
-     return require('deprecated-react-native-prop-types').EdgeInsetsPropType;
-   },
-   get PointPropType(): $FlowFixMe {
--    console.warn(
--      'PointPropType will be removed from React Native. Migrate to ' +
--        "PointPropType exported from 'deprecated-react-native-prop-types'.",
--    );
-     return require('deprecated-react-native-prop-types').PointPropType;
-   },
-   get ViewPropTypes(): $FlowFixMe {
--    console.warn(
--      'ViewPropTypes will be removed from React Native. Migrate to ' +
--        "ViewPropTypes exported from 'deprecated-react-native-prop-types'.",
--    );
-     return require('deprecated-react-native-prop-types').ViewPropTypes;
-   },
- };
+diff --git a/node_modules/react-native/scripts/.packager.env b/node_modules/react-native/scripts/.packager.env
+new file mode 100644
+index 0000000..361f5fb
+--- /dev/null
++++ b/node_modules/react-native/scripts/.packager.env
+@@ -0,0 +1 @@
++export RCT_METRO_PORT=8081
+diff --git a/node_modules/react-native/scripts/find-node.sh b/node_modules/react-native/scripts/find-node.sh
+index 11338d0..7fb3e44 100755
+--- a/node_modules/react-native/scripts/find-node.sh
++++ b/node_modules/react-native/scripts/find-node.sh
+@@ -9,6 +9,7 @@ set -e
+ # remove global prefix if it's already set
+ # the running shell process will choose a node binary and a global package directory breaks version managers
+ unset PREFIX
++unset npm_config_prefix
+ 
+ # Support Homebrew on M1
+ HOMEBREW_M1_BIN=/opt/homebrew/bin
+diff --git a/node_modules/react-native/third-party-podspecs/boost.podspec b/node_modules/react-native/third-party-podspecs/boost.podspec
+index 2f1fcc4..fa82134 100644
+--- a/node_modules/react-native/third-party-podspecs/boost.podspec
++++ b/node_modules/react-native/third-party-podspecs/boost.podspec
+@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
+   spec.homepage = 'http://www.boost.org'
+   spec.summary = 'Boost provides free peer-reviewed portable C++ source libraries.'
+   spec.authors = 'Rene Rivera'
+-  spec.source = { :http => 'https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2',
++  spec.source = { :http => 'https://archives.boost.io/release/1.76.0/source/boost_1_76_0.tar.bz2',
+                   :sha256 => 'f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41' }
+ 
+   # Pinning to the same version as React.podspec.
