@@ -11,6 +11,7 @@
     "prepare": "husky install",
     "commit": "git-cz",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "run-development-android": "ENVFILE=.env.development npm run android",
     "run-production-android": "ENVFILE=.env.production npm run android --variant=release",
     "run-development-ios": "ENVFILE=.env.development npm run ios -- --simulator='iPhone 15 Pro'",
