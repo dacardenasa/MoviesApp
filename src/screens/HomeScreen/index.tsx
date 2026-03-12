@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React, { useContext, useEffect } from 'react';
 import {
   ActivityIndicator,
   View,
@@ -10,15 +10,19 @@ import {
   Text,
   Button,
 } from 'react-native';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {GradientWrapper, MoviePoster, MoviesCarrousel} from '@components/index';
-import {getColorsMediaFile} from '@helpers/index';
-import {GradientContext} from '@context/index';
-import {PLATFORMS} from '@constants/index';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import {
+  GradientWrapper,
+  MoviePoster,
+  MoviesCarrousel,
+} from '@components/index';
+import { getColorsMediaFile } from '@helpers/index';
+import { GradientContext } from '@context/index';
+import { PLATFORMS } from '@constants/index';
 import Carousel from 'react-native-snap-carousel';
-import {useMovies} from './useMovies';
+import { useMovies } from './useMovies';
 
-const {width: windowWidth} = Dimensions.get('window');
+const { width: windowWidth } = Dimensions.get('window');
 
 export const HomeScreen = () => {
   const {
@@ -30,8 +34,8 @@ export const HomeScreen = () => {
     hasAnyError,
     handleGetMovies,
   } = useMovies();
-  const {top} = useSafeAreaInsets();
-  const {handleBgMainColors, previousColors} = useContext(GradientContext);
+  const { top } = useSafeAreaInsets();
+  const { handleBgMainColors, previousColors } = useContext(GradientContext);
 
   const getPosterColors = async (index: number) => {
     const uri = nowPlaying[index].poster_path;
@@ -82,7 +86,7 @@ export const HomeScreen = () => {
             <View style={styles.carouselContainer}>
               <Carousel
                 data={nowPlaying}
-                renderItem={({item}) => <MoviePoster movie={item} />}
+                renderItem={({ item }) => <MoviePoster movie={item} />}
                 sliderWidth={windowWidth}
                 itemWidth={300}
                 inactiveSlideOpacity={0.9}

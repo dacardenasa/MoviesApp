@@ -10,27 +10,29 @@ import {
   TouchableOpacity,
   SafeAreaView,
 } from 'react-native';
-import {IDetailScreenProps} from '@interfaces/index';
-import {MovieDetails} from '@components/index';
+import { IDetailScreenProps } from '@interfaces/index';
+import { MovieDetails } from '@components/index';
 import Icon from 'react-native-vector-icons/Ionicons';
-import {useMovieDetails} from './useMovieDetails';
+import { useMovieDetails } from './useMovieDetails';
 
 const screenHeight = Dimensions.get('screen').height;
 
 export const DetailScreen = ({
   route: {
-    params: {movie},
+    params: { movie },
   },
   navigation,
 }: IDetailScreenProps) => {
-  const {isLoading, movieDetails, cast} = useMovieDetails({movieId: movie.id});
+  const { isLoading, movieDetails, cast } = useMovieDetails({
+    movieId: movie.id,
+  });
   return (
     <SafeAreaView>
       <ScrollView>
         <View style={styles.imageContainer}>
           <View style={styles.imageBorder}>
             <Image
-              source={{uri: movie?.poster_path}}
+              source={{ uri: movie?.poster_path }}
               style={styles.posterImage}
             />
           </View>

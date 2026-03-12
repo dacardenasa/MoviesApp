@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
-import { useEffect } from 'react';
-import {createContext} from 'react';
+import React, { useState } from 'react';
+import { createContext } from 'react';
 
 interface ImageColors {
   primary: string;

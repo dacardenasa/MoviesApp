@@ -1,7 +1,7 @@
 import React from 'react';
-import {Image, StyleSheet, View, TouchableOpacity} from 'react-native';
-import {IDetailScreenProps, MoviePosterProps} from '@interfaces/index';
-import {useNavigation} from '@react-navigation/native';
+import { Image, StyleSheet, View, TouchableOpacity } from 'react-native';
+import { IDetailScreenProps, MoviePosterProps } from '@interfaces/index';
+import { useNavigation } from '@react-navigation/native';
 
 export const MoviePoster = ({
   movie,
@@ -11,11 +11,11 @@ export const MoviePoster = ({
   const navigation = useNavigation<IDetailScreenProps['navigation']>();
   return (
     <TouchableOpacity
-      onPress={() => navigation.navigate('DetailScreen', {movie})}
+      onPress={() => navigation.navigate('DetailScreen', { movie })}
       activeOpacity={0.8}
-      style={{...styles.container, width, height}}>
+      style={{ ...styles.container, width, height }}>
       <View style={styles.imageContainer}>
-        <Image source={{uri: movie.poster_path}} style={styles.image} />
+        <Image source={{ uri: movie.poster_path }} style={styles.image} />
       </View>
     </TouchableOpacity>
   );

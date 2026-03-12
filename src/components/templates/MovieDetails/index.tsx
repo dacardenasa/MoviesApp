@@ -1,7 +1,7 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {Cast, IMovieFull} from '@interfaces/index';
-import {MovieCastCarrousel} from '@components/index';
+import { StyleSheet, Text, View } from 'react-native';
+import { Cast, IMovieFull } from '@interfaces/index';
+import { MovieCastCarrousel } from '@components/index';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 interface IMovieDetailsProps {
@@ -9,7 +9,7 @@ interface IMovieDetailsProps {
   cast: Cast[];
 }
 
-export const MovieDetails = ({movieDetails, cast}: IMovieDetailsProps) => (
+export const MovieDetails = ({ movieDetails, cast }: IMovieDetailsProps) => (
   <View style={styles.movieDetailsContainer}>
     <View style={styles.genresBox}>
       <Icon name="star-outline" color="grey" size={16} />

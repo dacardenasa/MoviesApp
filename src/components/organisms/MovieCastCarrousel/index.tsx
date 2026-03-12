@@ -1,13 +1,13 @@
 import React from 'react';
-import {FlatList, StyleSheet, View} from 'react-native';
-import {Cast} from '@interfaces/index';
-import {MovieCastCard} from '@components/index';
+import { FlatList, StyleSheet, View } from 'react-native';
+import { Cast } from '@interfaces/index';
+import { MovieCastCard } from '@components/index';
 
-export const MovieCastCarrousel = ({cast}: {cast: Cast[]}) => {
+export const MovieCastCarrousel = ({ cast }: { cast: Cast[] }) => {
   return (
     <FlatList
       data={cast}
-      renderItem={({item}) => (
+      renderItem={({ item }) => (
         <View style={styles.movieBox}>
           <MovieCastCard cast={item} />
         </View>
