@@ -1,7 +1,7 @@
-import {useFocusEffect} from '@react-navigation/native';
-import {useState, useCallback} from 'react';
-import {moviesAPI} from '@services/index';
-import {Cast, IMovieFull} from 'interfaces';
+import { useFocusEffect } from '@react-navigation/native';
+import { useState, useCallback } from 'react';
+import { moviesAPI } from '@services/index';
+import { Cast, IMovieFull } from 'interfaces';
 
 interface IMovieExtraInfo {
   isLoading: boolean;
@@ -9,7 +9,7 @@ interface IMovieExtraInfo {
   cast: Cast[];
 }
 
-export const useMovieDetails = ({movieId}: {movieId: number}) => {
+export const useMovieDetails = ({ movieId }: { movieId: number }) => {
   const [movieExtraInfo, setMovieExtraInfo] = useState<IMovieExtraInfo>({
     isLoading: true,
     movieDetails: undefined,

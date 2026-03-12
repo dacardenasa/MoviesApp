@@ -1,5 +1,5 @@
-import {IMovieFull} from 'interfaces';
-import {formatCurrency} from 'react-native-format-currency';
+import { IMovieFull } from 'interfaces';
+import { formatCurrency } from 'react-native-format-currency';
 
 export const transformMoviesDetails = (movie: IMovieFull) => {
   const [, valueFormattedWithoutSymbol, symbol] = formatCurrency({

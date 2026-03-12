@@ -1,7 +1,7 @@
-import {useFocusEffect} from '@react-navigation/native';
-import {useCallback, useState} from 'react';
-import {moviesAPI} from '@services/index';
-import {Movie} from '@interfaces/index';
+import { useFocusEffect } from '@react-navigation/native';
+import { useCallback, useState } from 'react';
+import { moviesAPI } from '@services/index';
+import { Movie } from '@interfaces/index';
 
 interface IMoviesState {
   nowPlaying: Movie[];

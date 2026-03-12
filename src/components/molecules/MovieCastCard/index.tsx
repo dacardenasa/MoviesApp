@@ -1,13 +1,16 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
-import {Cast} from 'interfaces';
+import { Image, StyleSheet, Text, View } from 'react-native';
+import { Cast } from 'interfaces';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export const MovieCastCard = ({cast}: {cast: Cast}) => {
+export const MovieCastCard = ({ cast }: { cast: Cast }) => {
   return (
     <View style={styles.castCardBox}>
       {cast.profile_path ? (
-        <Image source={{uri: cast.profile_path}} style={styles.castCardImage} />
+        <Image
+          source={{ uri: cast.profile_path }}
+          style={styles.castCardImage}
+        />
       ) : (
         <Icon name="image-outline" color="grey" size={50} />
       )}
