@@ -39,6 +39,9 @@ export const HomeScreen = () => {
 
   const getPosterColors = async (index: number) => {
     const uri = nowPlaying[index].poster_path;
+    if (!uri) {
+      return;
+    }
     const [primaryColor, secondaryColor] = await getColorsMediaFile(uri);
     handleBgMainColors({
       primary: primaryColor ?? '#FFFFFF',

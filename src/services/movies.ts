@@ -16,8 +16,8 @@ export const moviesAPI = {
       const { data } = await api.get<MovieDBResponseAPI>('/movie/now_playing');
       const mappedResults = transformMovies(data.results);
       return { ...data, results: mappedResults };
-    } catch (error: any) {
-      throw new Error(error.message);
+    } catch {
+      throw new Error('Error al obtener las películas en cartelera');
     }
   },
   getPopularMovies: async () => {
@@ -25,8 +25,8 @@ export const moviesAPI = {
       const { data } = await api.get<MovieDBResponseAPI>('/movie/popular');
       const mappedResults = transformMovies(data.results);
       return { ...data, results: mappedResults };
-    } catch (error: any) {
-      throw new Error(error.message);
+    } catch {
+      throw new Error('Error al obtener las películas populares');
     }
   },
   getTopRatedMovies: async () => {
@@ -34,8 +34,8 @@ export const moviesAPI = {
       const { data } = await api.get<MovieDBResponseAPI>('/movie/top_rated');
       const mappedResults = transformMovies(data.results);
       return { ...data, results: mappedResults };
-    } catch (error: any) {
-      throw new Error(error.message);
+    } catch {
+      throw new Error('Error al obtener las películas mejor valoradas');
     }
   },
   getUpcomingMovies: async () => {
@@ -43,8 +43,8 @@ export const moviesAPI = {
       const { data } = await api.get<MovieDBResponseAPI>('/movie/upcoming');
       const mappedResults = transformMovies(data.results);
       return { ...data, results: mappedResults };
-    } catch (error: any) {
-      throw new Error(error.message);
+    } catch {
+      throw new Error('Error al obtener las próximas películas');
     }
   },
   getMovieDetails: async (movieId: number) => {
@@ -52,8 +52,8 @@ export const moviesAPI = {
       const { data } = await api.get<IMovieFull>(`/movie/${movieId}`);
       const parsedMovieDetails = transformMoviesDetails(data);
       return parsedMovieDetails;
-    } catch (error: any) {
-      throw new Error(error.message);
+    } catch {
+      throw new Error('Error al obtener los detalles de la película');
     }
   },
   getMovieCredits: async (movieId: number) => {
@@ -63,8 +63,8 @@ export const moviesAPI = {
       );
       const parsedMovieCredits = transformMovieCredits(data);
       return parsedMovieCredits;
-    } catch (error: any) {
-      throw new Error(error.message);
+    } catch {
+      throw new Error('Error al obtener los créditos de la película');
     }
   },
 };

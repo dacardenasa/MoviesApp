@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailScreen should match snapshot when loaded 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "borderBottomEndRadius": 25,
+            "borderBottomStartRadius": 25,
+            "elevation": 9,
+            "height": 933.8,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.25,
+            "shadowRadius": 3.84,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderBottomEndRadius": 25,
+              "borderBottomStartRadius": 25,
+              "flex": 1,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+              }
+            }
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginHorizontal": 20,
+            "marginTop": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 16,
+              "opacity": 0.8,
+            }
+          }
+        >
+          Original Test Movie
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 20,
+              "fontWeight": "700",
+            }
+          }
+        >
+          Test Movie
+        </Text>
+      </View>
+      <mock-movie-details
+        cast={
+          Array [
+            Object {
+              "adult": false,
+              "character": "Hero",
+              "credit_id": "abc123",
+              "gender": 1,
+              "id": 1,
+              "known_for_department": "Acting",
+              "name": "Jane Doe",
+              "order": 0,
+              "original_name": "Jane Doe",
+              "popularity": 50,
+              "profile_path": "https://image.tmdb.org/t/p/w500/profile.jpg",
+            },
+          ]
+        }
+        movieDetails={
+          Object {
+            "adult": false,
+            "backdrop_path": null,
+            "belongs_to_collection": null,
+            "budget": "$120,000,000",
+            "genres": Array [
+              Object {
+                "id": 28,
+                "name": "Acción",
+              },
+            ],
+            "homepage": "https://movie.com",
+            "id": 42,
+            "imdb_id": "tt1234567",
+            "original_language": "en",
+            "original_title": "Test Movie",
+            "overview": "A test movie overview",
+            "popularity": 100,
+            "poster_path": "/poster.jpg",
+            "production_companies": Array [],
+            "production_countries": Array [],
+            "release_date": "2024-01-01",
+            "revenue": 5000000,
+            "runtime": 120,
+            "spoken_languages": Array [],
+            "status": "Released",
+            "tagline": "A great movie",
+            "title": "Test Movie",
+            "video": false,
+            "vote_average": 7.5,
+            "vote_count": 1000,
+          }
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "left": 10,
+            "opacity": 1,
+            "position": "absolute",
+            "top": 10,
+          }
+        }
+      >
+        <Icon
+          color="white"
+          name="arrow-back-outline"
+          size={60}
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
+
+exports[`DetailScreen should match snapshot when loading 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "borderBottomEndRadius": 25,
+            "borderBottomStartRadius": 25,
+            "elevation": 9,
+            "height": 933.8,
+            "shadowColor": "#000",
+            "shadowOffset": Object {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.25,
+            "shadowRadius": 3.84,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderBottomEndRadius": 25,
+              "borderBottomStartRadius": 25,
+              "flex": 1,
+              "overflow": "hidden",
+            }
+          }
+        >
+          <Image
+            source={
+              Object {
+                "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+              }
+            }
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "marginHorizontal": 20,
+            "marginTop": 20,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 16,
+              "opacity": 0.8,
+            }
+          }
+        >
+          Original Test Movie
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#000000",
+              "fontSize": 20,
+              "fontWeight": "700",
+            }
+          }
+        >
+          Test Movie
+        </Text>
+      </View>
+      <ActivityIndicator
+        color="gray"
+        size={35}
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "left": 10,
+            "opacity": 1,
+            "position": "absolute",
+            "top": 10,
+          }
+        }
+      >
+        <Icon
+          color="white"
+          name="arrow-back-outline"
+          size={60}
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;

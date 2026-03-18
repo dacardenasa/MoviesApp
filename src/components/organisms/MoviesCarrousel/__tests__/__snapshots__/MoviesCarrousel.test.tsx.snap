@@ -1,0 +1,590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesCarrousel should match snapshot with title 1`] = `
+<View
+  style={
+    Object {
+      "height": 260,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "fontSize": 30,
+        "fontWeight": "bold",
+        "marginLeft": 10,
+      }
+    }
+  >
+    Popular
+  </Text>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "adult": false,
+          "backdrop_path": "/backdrop.jpg",
+          "genre_ids": Array [
+            28,
+            12,
+          ],
+          "id": 1,
+          "original_language": "en",
+          "original_title": "Test Movie",
+          "overview": "A test movie overview",
+          "popularity": 100,
+          "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+          "release_date": "2024-01-01",
+          "title": "Movie One",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 1000,
+        },
+        Object {
+          "adult": false,
+          "backdrop_path": "/backdrop.jpg",
+          "genre_ids": Array [
+            28,
+            12,
+          ],
+          "id": 2,
+          "original_language": "en",
+          "original_title": "Test Movie",
+          "overview": "A test movie overview",
+          "popularity": 100,
+          "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+          "release_date": "2024-01-01",
+          "title": "Movie Two",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 1000,
+        },
+        Object {
+          "adult": false,
+          "backdrop_path": "/backdrop.jpg",
+          "genre_ids": Array [
+            28,
+            12,
+          ],
+          "id": 3,
+          "original_language": "en",
+          "original_title": "Test Movie",
+          "overview": "A test movie overview",
+          "popularity": 100,
+          "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+          "release_date": "2024-01-01",
+          "title": "Movie Three",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 1000,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={true}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsHorizontalScrollIndicator={false}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 200,
+              "marginHorizontal": 2,
+              "opacity": 1,
+              "paddingBottom": 20,
+              "paddingHorizontal": 7,
+              "width": 140,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderRadius": 18,
+                "elevation": 10,
+                "flex": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 200,
+              "marginHorizontal": 2,
+              "opacity": 1,
+              "paddingBottom": 20,
+              "paddingHorizontal": 7,
+              "width": 140,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderRadius": 18,
+                "elevation": 10,
+                "flex": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 200,
+              "marginHorizontal": 2,
+              "opacity": 1,
+              "paddingBottom": 20,
+              "paddingHorizontal": 7,
+              "width": 140,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderRadius": 18,
+                "elevation": 10,
+                "flex": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`MoviesCarrousel should match snapshot without title 1`] = `
+<View
+  style={
+    Object {
+      "height": 220,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "adult": false,
+          "backdrop_path": "/backdrop.jpg",
+          "genre_ids": Array [
+            28,
+            12,
+          ],
+          "id": 1,
+          "original_language": "en",
+          "original_title": "Test Movie",
+          "overview": "A test movie overview",
+          "popularity": 100,
+          "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+          "release_date": "2024-01-01",
+          "title": "Movie One",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 1000,
+        },
+        Object {
+          "adult": false,
+          "backdrop_path": "/backdrop.jpg",
+          "genre_ids": Array [
+            28,
+            12,
+          ],
+          "id": 2,
+          "original_language": "en",
+          "original_title": "Test Movie",
+          "overview": "A test movie overview",
+          "popularity": 100,
+          "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+          "release_date": "2024-01-01",
+          "title": "Movie Two",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 1000,
+        },
+        Object {
+          "adult": false,
+          "backdrop_path": "/backdrop.jpg",
+          "genre_ids": Array [
+            28,
+            12,
+          ],
+          "id": 3,
+          "original_language": "en",
+          "original_title": "Test Movie",
+          "overview": "A test movie overview",
+          "popularity": 100,
+          "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+          "release_date": "2024-01-01",
+          "title": "Movie Three",
+          "video": false,
+          "vote_average": 7.5,
+          "vote_count": 1000,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={true}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsHorizontalScrollIndicator={false}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 200,
+              "marginHorizontal": 2,
+              "opacity": 1,
+              "paddingBottom": 20,
+              "paddingHorizontal": 7,
+              "width": 140,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderRadius": 18,
+                "elevation": 10,
+                "flex": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 200,
+              "marginHorizontal": 2,
+              "opacity": 1,
+              "paddingBottom": 20,
+              "paddingHorizontal": 7,
+              "width": 140,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderRadius": 18,
+                "elevation": 10,
+                "flex": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "height": 200,
+              "marginHorizontal": 2,
+              "opacity": 1,
+              "paddingBottom": 20,
+              "paddingHorizontal": 7,
+              "width": 140,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderRadius": 18,
+                "elevation": 10,
+                "flex": 1,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 18,
+                  "flex": 1,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

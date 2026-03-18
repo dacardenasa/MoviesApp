@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieDetails should match snapshot 1`] = `
+<View
+  style={
+    Object {
+      "marginHorizontal": 20,
+      "marginTop": 4,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Icon
+      color="grey"
+      name="star-outline"
+      size={16}
+    />
+    <Text
+      style={
+        Object {
+          "marginLeft": 8,
+        }
+      }
+    >
+      7.5 - Acción, Aventura
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "column",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginTop": 10,
+        }
+      }
+    >
+      Historia
+    </Text>
+    <Text>
+      Una gran película de prueba.
+    </Text>
+    <Text
+      style={
+        Object {
+          "fontSize": 20,
+          "fontWeight": "bold",
+          "marginTop": 10,
+        }
+      }
+    >
+      Presupuesto
+    </Text>
+    <Text>
+      $120,000,000
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "marginTop": 10,
+      }
+    }
+  >
+    Actores
+  </Text>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    data={
+      Array [
+        Object {
+          "adult": false,
+          "cast_id": 1,
+          "character": "Hero",
+          "credit_id": "abc123",
+          "gender": 1,
+          "id": 1,
+          "known_for_department": "Acting",
+          "name": "Jane Doe",
+          "order": 0,
+          "original_name": "Jane Doe",
+          "popularity": 50,
+          "profile_path": "https://image.tmdb.org/t/p/w500/profile.jpg",
+        },
+        Object {
+          "adult": false,
+          "cast_id": 1,
+          "character": "Villain",
+          "credit_id": "abc123",
+          "gender": 1,
+          "id": 2,
+          "known_for_department": "Acting",
+          "name": "John Smith",
+          "order": 0,
+          "original_name": "Jane Doe",
+          "popularity": 50,
+          "profile_path": "https://image.tmdb.org/t/p/w500/profile.jpg",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={true}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    showsHorizontalScrollIndicator={false}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "borderRadius": 8,
+                "elevation": 3,
+                "flexDirection": "row",
+                "height": 60,
+                "justifyContent": "flex-start",
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+                "width": 250,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/profile.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 8,
+                  "width": 60,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "justifyContent": "center",
+                  "paddingHorizontal": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Jane Doe
+              </Text>
+              <Text>
+                as
+                 
+                Hero
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "width": 50,
+            }
+          }
+        />
+      </View>
+      <View
+        onLayout={[Function]}
+        style={
+          Array [
+            Object {
+              "flexDirection": "row",
+            },
+            null,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "paddingVertical": 10,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "borderRadius": 8,
+                "elevation": 3,
+                "flexDirection": "row",
+                "height": 60,
+                "justifyContent": "flex-start",
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+                "width": 250,
+              }
+            }
+          >
+            <Image
+              source={
+                Object {
+                  "uri": "https://image.tmdb.org/t/p/w500/profile.jpg",
+                }
+              }
+              style={
+                Object {
+                  "borderRadius": 8,
+                  "width": 60,
+                }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "justifyContent": "center",
+                  "paddingHorizontal": 8,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                John Smith
+              </Text>
+              <Text>
+                as
+                 
+                Villain
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <View
+    style={
+      Object {
+        "height": 20,
+      }
+    }
+  />
+</View>
+`;
