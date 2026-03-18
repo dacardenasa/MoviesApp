@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen should match snapshot when error 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text>
+    Error on load movies
+  </Text>
+  <View
+    accessibilityRole="button"
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Load again movies
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`HomeScreen should match snapshot when loaded 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "marginTop": 24,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "height": 440,
+            }
+          }
+        >
+          <mock-carousel
+            data={
+              Array [
+                Object {
+                  "adult": false,
+                  "backdrop_path": "/backdrop.jpg",
+                  "genre_ids": Array [
+                    28,
+                    12,
+                  ],
+                  "id": 1,
+                  "original_language": "en",
+                  "original_title": "Test Movie",
+                  "overview": "A test movie overview",
+                  "popularity": 100,
+                  "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                  "release_date": "2024-01-01",
+                  "title": "Now Playing 1",
+                  "video": false,
+                  "vote_average": 7.5,
+                  "vote_count": 1000,
+                },
+                Object {
+                  "adult": false,
+                  "backdrop_path": "/backdrop.jpg",
+                  "genre_ids": Array [
+                    28,
+                    12,
+                  ],
+                  "id": 2,
+                  "original_language": "en",
+                  "original_title": "Test Movie",
+                  "overview": "A test movie overview",
+                  "popularity": 100,
+                  "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                  "release_date": "2024-01-01",
+                  "title": "Now Playing 2",
+                  "video": false,
+                  "vote_average": 7.5,
+                  "vote_count": 1000,
+                },
+              ]
+            }
+            onSnapToItem={[Function]}
+            testID="carousel"
+          >
+            <mock-movie-poster
+              movie={
+                Object {
+                  "adult": false,
+                  "backdrop_path": "/backdrop.jpg",
+                  "genre_ids": Array [
+                    28,
+                    12,
+                  ],
+                  "id": 1,
+                  "original_language": "en",
+                  "original_title": "Test Movie",
+                  "overview": "A test movie overview",
+                  "popularity": 100,
+                  "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                  "release_date": "2024-01-01",
+                  "title": "Now Playing 1",
+                  "video": false,
+                  "vote_average": 7.5,
+                  "vote_count": 1000,
+                }
+              }
+              testID="poster-1"
+            />
+            <mock-movie-poster
+              movie={
+                Object {
+                  "adult": false,
+                  "backdrop_path": "/backdrop.jpg",
+                  "genre_ids": Array [
+                    28,
+                    12,
+                  ],
+                  "id": 2,
+                  "original_language": "en",
+                  "original_title": "Test Movie",
+                  "overview": "A test movie overview",
+                  "popularity": 100,
+                  "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                  "release_date": "2024-01-01",
+                  "title": "Now Playing 2",
+                  "video": false,
+                  "vote_average": 7.5,
+                  "vote_count": 1000,
+                }
+              }
+              testID="poster-2"
+            />
+          </mock-carousel>
+        </View>
+        <mock-movies-carrousel
+          movies={
+            Array [
+              Object {
+                "adult": false,
+                "backdrop_path": "/backdrop.jpg",
+                "genre_ids": Array [
+                  28,
+                  12,
+                ],
+                "id": 3,
+                "original_language": "en",
+                "original_title": "Test Movie",
+                "overview": "A test movie overview",
+                "popularity": 100,
+                "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                "release_date": "2024-01-01",
+                "title": "Popular 1",
+                "video": false,
+                "vote_average": 7.5,
+                "vote_count": 1000,
+              },
+            ]
+          }
+          testID="carrousel-Popular"
+          title="Popular"
+        />
+        <mock-movies-carrousel
+          movies={
+            Array [
+              Object {
+                "adult": false,
+                "backdrop_path": "/backdrop.jpg",
+                "genre_ids": Array [
+                  28,
+                  12,
+                ],
+                "id": 4,
+                "original_language": "en",
+                "original_title": "Test Movie",
+                "overview": "A test movie overview",
+                "popularity": 100,
+                "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                "release_date": "2024-01-01",
+                "title": "Top Rated 1",
+                "video": false,
+                "vote_average": 7.5,
+                "vote_count": 1000,
+              },
+            ]
+          }
+          testID="carrousel-Top Rated"
+          title="Top Rated"
+        />
+        <mock-movies-carrousel
+          movies={
+            Array [
+              Object {
+                "adult": false,
+                "backdrop_path": "/backdrop.jpg",
+                "genre_ids": Array [
+                  28,
+                  12,
+                ],
+                "id": 5,
+                "original_language": "en",
+                "original_title": "Test Movie",
+                "overview": "A test movie overview",
+                "popularity": 100,
+                "poster_path": "https://image.tmdb.org/t/p/w500/poster.jpg",
+                "release_date": "2024-01-01",
+                "title": "Upcoming 1",
+                "video": false,
+                "vote_average": 7.5,
+                "vote_count": 1000,
+              },
+            ]
+          }
+          testID="carrousel-Upcoming"
+          title="Upcoming"
+        />
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
+
+exports[`HomeScreen should match snapshot when loading 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <ActivityIndicator
+    color="red"
+    size={100}
+  />
+</View>
+`;

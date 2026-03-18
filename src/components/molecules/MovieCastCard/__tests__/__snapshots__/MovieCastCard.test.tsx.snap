@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCastCard Should matches snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "borderRadius": 8,
+      "elevation": 3,
+      "flexDirection": "row",
+      "height": 60,
+      "justifyContent": "flex-start",
+      "shadowColor": "#000",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.25,
+      "shadowRadius": 3.84,
+      "width": 250,
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://image.tmdb.org/t/p/w500/profile.jpg",
+      }
+    }
+    style={
+      Object {
+        "borderRadius": 8,
+        "width": 60,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "justifyContent": "center",
+        "paddingHorizontal": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Jane Doe
+    </Text>
+    <Text>
+      as
+       
+      Hero
+    </Text>
+  </View>
+</View>
+`;

@@ -22,7 +22,7 @@
     "@react-navigation/native-stack": "^6.9.12",
     "@react-navigation/stack": "^6.2.1",
     "@types/react-native-dotenv": "^0.2.0",
-    "axios": "^0.27.2",
+    "axios": "^1.7.0",
     "deprecated-react-native-prop-types": "^4.1.0",
     "react": "17.0.2",
     "react-native": "0.68.2",
@@ -74,6 +74,15 @@
       "jsx",
       "json",
       "node"
+    ],
+    "moduleNameMapper": {
+      "\\.(png|jpg|jpeg|gif|webp)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|@react-native|@react-navigation|react-native-vector-icons|react-native-gesture-handler|react-native-screens|react-native-safe-area-context|react-native-linear-gradient|react-native-snap-carousel|react-native-image-colors|react-native-config)/)"
     ]
   },
   "config": {

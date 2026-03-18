@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StackNavigation should match snapshot 1`] = `
+<mock-navigator
+  screenOptions={
+    Object {
+      "cardStyle": Object {
+        "backgroundColor": "white",
+      },
+      "headerShown": false,
+    }
+  }
+>
+  <mock-screen
+    component={[Function]}
+    name="HomeScreen"
+  />
+  <mock-screen
+    component={[Function]}
+    name="DetailScreen"
+  />
+</mock-navigator>
+`;

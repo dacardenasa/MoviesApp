@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviePoster Should matches snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": 420,
+      "marginHorizontal": 2,
+      "opacity": 1,
+      "paddingBottom": 20,
+      "paddingHorizontal": 7,
+      "width": 300,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "borderRadius": 18,
+        "elevation": 10,
+        "flex": 1,
+        "shadowColor": "#000",
+        "shadowOffset": Object {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.25,
+        "shadowRadius": 3.84,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "https://image.tmdb.org/t/p/w500/poster.jpg",
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 18,
+          "flex": 1,
+        }
+      }
+    />
+  </View>
+</View>
+`;

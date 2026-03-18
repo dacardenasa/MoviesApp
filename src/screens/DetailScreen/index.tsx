@@ -31,10 +31,16 @@ export const DetailScreen = ({
       <ScrollView>
         <View style={styles.imageContainer}>
           <View style={styles.imageBorder}>
-            <Image
-              source={{ uri: movie?.poster_path }}
-              style={styles.posterImage}
-            />
+            {movie?.poster_path ? (
+              <Image
+                source={{ uri: movie.poster_path }}
+                style={styles.posterImage}
+              />
+            ) : (
+              <View style={styles.fallbackPoster}>
+                <Icon name="image-outline" color="grey" size={80} />
+              </View>
+            )}
           </View>
         </View>
         <View style={styles.movieNameContainer}>
@@ -99,5 +105,11 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     left: 10,
+  },
+  fallbackPoster: {
+    flex: 1,
+    backgroundColor: '#e0e0e0',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

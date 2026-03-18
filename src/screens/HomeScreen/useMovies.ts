@@ -33,6 +33,7 @@ export const useMovies = () => {
           topRatedPromise,
           upcomingPromise,
         ]);
+
       setMoviesState({
         nowPlaying: nowPlayingMovies.results,
         popular: popularMovies.results,
